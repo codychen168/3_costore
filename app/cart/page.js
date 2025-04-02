@@ -25,7 +25,6 @@ export default function CartPage() {
       });
       const data = await response.json();
       if (response.ok) {
-        console.log(data);
         router.push(data.url);
       }
     } catch (err) {
